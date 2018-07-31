@@ -8,3 +8,6 @@ Plug 'itchyny/lightline.vim'
 call plug#end()
 
 colo seoul256
+set laststatus=2
+set noshowmode
+let g:lightline = { 'colorscheme': 'seoul256', }
