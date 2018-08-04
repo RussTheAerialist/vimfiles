@@ -14,10 +14,18 @@ else
   Plug 'roxma/nvim-yarp'
   Plug 'roxma/vim-hug-neovim-rpc'
 endif
+Plug 'tpope/vim-fugitive'
 call plug#end()
 
 colo seoul256
 set laststatus=2
 set noshowmode
-let g:lightline = { 'colorscheme': 'seoul256', }
+let g:lightline = {
+  \ 'colorscheme': 'seoul256',
+  \ 'active': {
+  \ 'left': [ [ 'mode', 'paste' ],
+  \           [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+  \ },
+  \ 'component_function': { 'gitbranch': 'fugitive#head' },
+  \ }
 let g:deoplete#enable_at_startup = 1
