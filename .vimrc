@@ -7,14 +7,8 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
-if has('nvim')
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-else
-  Plug 'Shougo/deoplete.nvim'
-  Plug 'roxma/nvim-yarp'
-  Plug 'roxma/vim-hug-neovim-rpc'
-endif
 Plug 'tpope/vim-fugitive'
+Plug 'freitass/todo.txt-vim'
 call plug#end()
 
 colo seoul256
@@ -28,4 +22,3 @@ let g:lightline = {
   \ },
   \ 'component_function': { 'gitbranch': 'fugitive#head' },
   \ }
-let g:deoplete#enable_at_startup = 1
