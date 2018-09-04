@@ -15,6 +15,9 @@ call plug#end()
 colo seoul256
 set laststatus=2
 set noshowmode
+set expandtab
+set shiftwidth=2
+set softtabstop=2
 let g:lightline = {
   \ 'colorscheme': 'seoul256',
   \ 'active': {
