@@ -10,6 +10,7 @@ Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'tpope/vim-fugitive'
 Plug 'freitass/todo.txt-vim'
+Plug 'ekalinin/Dockerfile.vim'
 call plug#end()
 
 colo seoul256
